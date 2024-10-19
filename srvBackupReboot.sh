@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/andrea/Scripts/BschedooleBot/
-node main.js
+node main.js $1
