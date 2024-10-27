@@ -4,7 +4,8 @@ const args = process.argv.slice(2);
 const axios = require("axios");
 const botToken = process.env.BOT_TOKEN;
 const chatId = process.env.BSC_GROUP_ID;
-const message = "srvBackup è stato avviato correttamente"
+const hostname = args[1];
+const message = hostname + " è stato avviato correttamente"
 const url = 'https://api.telegram.org/bot' + botToken + '/sendMessage'
 const idComando = args[0]
 const rebootOk = 'rebootOk'
@@ -18,7 +19,6 @@ switch (idComando) {
         break;
     default : 
         break;
-          
 }
 
 
